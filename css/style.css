@@ -66,6 +66,10 @@ header{
     margin-top: 20px;
 }
 
+.container-fluid li a{
+margin-left: 8px;  /*separa las etiquetas*/
+}
+
 .navbar:hover ul li a{
 transform: scale(1.07);
 }
@@ -105,11 +109,12 @@ transform: scale(1.07);
 
 footer{
     width: 100%;
-    padding: 50px 0px;
+   /* padding: 50px 0px;*/
     background-image: url(../Images/background-footer.svg);
     background-size: cover;
     background-color:blanchedalmond;
     text-decoration: none;
+    margin-top: 100px;
 }
 
 .container__footer{
@@ -122,6 +127,10 @@ footer{
     font-family: 'Lobster', cursive;
     align-items: center;
     text-decoration: none;
+}
+
+.container__row p{
+    color: #7a7a7a;
 }
 
 .box__footer{

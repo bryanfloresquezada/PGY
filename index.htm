@@ -14,7 +14,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
 
@@ -31,24 +34,24 @@
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalRegisterForm"><img src="img/3289576_user_icon.png" width="30" height="30"> Iniciar sesión</a>
                     </li>
-                    <li class="nav-item">
+                   <!-- <li class="nav-item">
                         <a class="nav-link" href="productos.html"><img src="img/alimentos-para-mascotas.png" width="30" height="30"> Productos</a>
-                    </li>
-                    <li class="nav-item">
+                    </li>-->
+                   <!-- <li class="nav-item">
                         <a class="nav-link" href="ofertas.html"><img src="img/descuento.png" width="30" height="30"> Ofertas</a>
-                    </li>
-                    <li class="nav-item">
+                    </li>-->
+                    <!--<li class="nav-item">
                         <a class="nav-link" href="kits.html"><img src="img/kit-de-herramientas.png" width="30" height="30"> Kits</a>
-                    </li>
-                    <li class="nav-item">
+                    </li>-->
+                    <!--<li class="nav-item">
                         <a class="nav-link" href="carro.html"><img src="img/carrito-de-compras.png" width="30" height="30"> Carro de venta</a>
-                    </li>
+                    </li>-->
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="modal" data-bs-target="#suscrpciones"><img src="img/suscripcion.png" width="30" height="30"> Suscrpciones</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href=""><img src="img/opcion-de-cerrar-sesion.png" width="30" height="30"> Cerrar sesión</a>
-                    </li>     
+                    <!--<li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#cerrar"><img src="img/opcion-de-cerrar-sesion.png" width="30" height="30"> Cerrar sesión</a>
+                    </li>-->
                 </ul>
             </div>
         </div>
@@ -137,7 +140,7 @@
                 <button class="btn btn-deep-orange">Ingresar</button>
             </div>
             <div class="modal-text d-flex justify-content-center">
-               <p>¿Olvidaste tu contraseña?</p><a a href="#"></a><i class="nav-link"  data-bs-toggle="modal" data-bs-target="#recuperar">Recupera aquí</a>
+               <p>¿Olvidaste tu contraseña?</p><a href="olvida.html">Recuperar aquí</a>
             </div>
              <!--<a href="#"><i class="fa-brands fa-tiktok"></i> TikTok</a>-->
             <div class="modal-text d-flex justify-content-center">
@@ -152,31 +155,34 @@
   </div>
  </div>
 
- <!--MODAL OLVIDA CONTRASEÑA-->
 
- <div class="modal fade" id="recuperar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+
+
+
+ <!--MODAL CERRAR SESIÓN-->
+ <div class="modal fade" id="cerrar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header text-center">
-                <h4 class="modal-title w-100 font-weight-bold">¿Olvidaste tu contraseña?</h4>
-                <h6>Introduce tu correo electrónico, teléfono o nombre de usuario y te enviaremos un enlace para que recuperes tu cuenta</h6>
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cerrar sesión</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body mx-3">
-                <div class="md-form mb-5">
-                    <i class="fas fa-envelope prefix grey-text"></i>
-                    <input type="email" id="orangeForm-email" class="form-control validate">
-                    <label data-error="wrong" data-success="right" for="orangeForm-email">Correo electrónico, teléfono o usuario</label>
-                </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3" >
+                        <label for="exampleInputEmail1" class="form-label">¿Desea cerrar sesión?</label>
+                        
+                    </div>
+                    <div class="mb-3 form-check">
+                        <button type="button" class="btn btn-danger">Sí</button>
+                        <button type="button" class="btn btn-success">No</button>
+                    </div>
+                </form>
             </div>
-            <div class="modal-footer d-flex justify-content-center">
-                <button class="btn btn-deep-orange">Enviar enlace de recuperación</button>
-            </div>
-          
+        </div>
     </div>
-  </div>
- </div>
- <!--TERMINA AQUI MODAL OLVIDA CONTRASEÑA-->
+</div>
+ <!--AQUI TERMINA MODAL CERRAR SESION-->
 </div>
 
         
