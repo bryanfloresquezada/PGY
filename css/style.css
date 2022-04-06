@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +7,50 @@
     text-decoration: none;
     font-family: 'Indie Flower', cursive;
 }
+
+/*--------------------------------------------*/
+
+.slider-frame {
+	width: 1110px;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+    /*padding-left: 190px;*/
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+/*--------------------------------------------*/
+
 .btn-deep-orange {
     color: #fff;
     background-color: #ff7043 !important;
@@ -195,6 +238,8 @@ footer{
     height: 1px;
     background-color: #7a7a7a;
 }
+
+
 
 
 
