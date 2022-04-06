@@ -51,6 +51,10 @@
 
 /*--------------------------------------------*/
 
+.container__row .row{
+    background-color:rosybrown
+}
+
 .btn-deep-orange {
     color: #fff;
     background-color: #ff7043 !important;
@@ -166,8 +170,7 @@ footer{
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
-    margin-top: 100px;
-    font-family: 'Lobster', cursive;
+   /* margin-top: 100px;*/
     align-items: center;
     text-decoration: none;
 }
@@ -179,7 +182,7 @@ footer{
 .box__footer{
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 10px;
     text-decoration: none;
 }
 
