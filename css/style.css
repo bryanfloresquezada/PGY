@@ -8,7 +8,232 @@
     font-family: 'Indie Flower', cursive;
 }
 
-/*--------------------------------------------*/
+body{
+    background-image: linear-gradient(135deg, #00B7D4, #505488, #2F3F80, #161569, #5A4894, #A950A1, #FF7CAE);
+    background-size: 100%;
+    animation: fanimado 10s infinite;
+}
+/*------------NUEVO INDEX-----------*/
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.bg_animate{
+    width: 100%;
+    height: 200vh;
+    background-image: linear-gradient(135deg, #00B7D4, #505488, #2F3F80, #161569, #5A4894, #A950A1, #FF7CAE);
+    background-size: 100%;
+    animation: fanimado 10s infinite;
+}
+
+@keyframes fanimado{
+    0%{
+        background-position: 0% 50%;  
+    }
+    50%{
+        background-position: 100% 50%;  
+    }
+    100%{
+        background-position: 0% 50%;  
+    }
+}
+
+.header_nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header_nav .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.header_nav h1{
+    color: #fff;
+    font-family: 'Gagalin';
+}
+
+.header_nav nav a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.banner_title h2{
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Indie Flower', cursive;
+ 
+}
+
+.banner_title .login{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.banner_title .sus{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 45px;
+}
+
+.banner_img{
+    animation: movimiento 2.5s linear infinite;
+}
+
+.banner_img img{
+    width: 600px;
+    display: block;
+}
+
+/* burbujas */
+
+.burbuja{
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+
+    position: absolute;
+    bottom: -150;
+    
+    animation: burbujas 3s linear infinite ;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+}
+
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(8){
+    width: 100;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(10){
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/*------------FIN NUEVO INDEX-----------*/
+
+/*-------------SLIDER-----------------
 
 .slider-frame {
 	width: 1110px;
@@ -32,7 +257,7 @@
 
 .slider-frame img {
 	width: 100%;
-    /*padding-left: 190px;*/
+
 }
 
 @keyframes slide {
@@ -49,21 +274,47 @@
 	100% {margin-left: -300%;}
 }
 
-/*--------------------------------------------*/
+-----------SLIDER-------------------*/
 
-.container__row .row{
-    background-color:rosybrown
+
+
+/*BTN*/
+.btn{
+    border: 3px solid rgba(100, 100, 100, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 250px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    background-size: 300%;
+    transition: 0.6s;
+}
+
+.btn:hover{
+background-position: right;
 }
 
 .btn-deep-orange {
     color: #fff;
-    background-color: #ff7043 !important;
+    background-image: linear-gradient(to left, #FF5733, #881857, #FF5733);
+  
 }
 
 .btn-deep-orange:hover {
     color: #fff;
-    background-color: #ff7043 !important;
+    background-image: linear-gradient(to left, #FF5733, #881857, #FF5733);
 }
+
+.btn-s{
+    
+    color: #fff;
+    background-image: linear-gradient(to left, #FF5733, #881857, #FF5733);
+}
+
+/*FIN BTN*/
 
 .modal-text p{
 
@@ -159,7 +410,6 @@ footer{
    /* padding: 50px 0px;*/
     background-image: url(../Images/background-footer.svg);
     background-size: cover;
-    background-color:blanchedalmond;
     text-decoration: none;
     margin-top: 100px;
 }
@@ -200,19 +450,19 @@ footer{
     max-width: 350px;
     margin-top: 20px;
     font-weight: 500;
-    color: #7a7a7a;
+    color: mintcream;
     font-size: 18px;
 }
 
 .box__footer h2{
     margin-bottom: 30px;
-    color: #343434;
+    color: black;
     font-weight: 700;
 }
 
 .box__footer a{
     margin-top: 10px;
-    color: #7a7a7a;
+    color: mintcream;
     font-weight: 600;
 }
 
