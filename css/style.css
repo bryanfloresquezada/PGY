@@ -9,8 +9,8 @@
 }
 
 body{
-    background-image: linear-gradient(135deg, #00B7D4, #505488, #2F3F80, #161569, #5A4894, #A950A1, #FF7CAE);
-    background-size: 100%;
+   
+    background-size: 1000%; background-image: linear-gradient(135deg, #00B7D4, #505488, #2F3F80, #161569, #5A4894, #A950A1, #FF7CAE);
     animation: fanimado 10s infinite;
 }
 /*------------NUEVO INDEX-----------*/
@@ -110,115 +110,6 @@ body{
 
 /* burbujas */
 
-.burbuja{
-    border-radius: 50%;
-    background: #fff;
-    opacity: .3;
-
-    position: absolute;
-    bottom: -150;
-    
-    animation: burbujas 3s linear infinite ;
-}
-
-.burbuja:nth-child(1){
-    width: 80px;
-    height: 80px;
-    left: 5%;
-    animation-duration: 3s;
-    animation-delay: 3s;
-}
-
-.burbuja:nth-child(2){
-    width: 100px;
-    height: 100px;
-    left: 35%;
-    animation-duration: 3s;
-    animation-delay: 5s;
-}
-
-.burbuja:nth-child(3){
-    width: 20px;
-    height: 20px;
-    left: 15%;
-    animation-duration: 1.5s;
-    animation-delay: 7s;
-}
-
-.burbuja:nth-child(4){
-    width: 50px;
-    height: 50px;
-    left: 90%;
-    animation-duration: 6s;
-    animation-delay: 3s;
-}
-
-.burbuja:nth-child(5){
-    width: 70px;
-    height: 70px;
-    left: 65%;
-    animation-duration: 3s;
-    animation-delay: 1s;
-}
-
-.burbuja:nth-child(6){
-    width: 20px;
-    height: 20px;
-    left: 50%;
-    animation-duration: 4s;
-    animation-delay: 5s;
-}
-
-.burbuja:nth-child(7){
-    width: 20px;
-    height: 20px;
-    left: 50%;
-    animation-duration: 4s;
-    animation-delay: 5s;
-}
-
-.burbuja:nth-child(8){
-    width: 100;
-    height: 100px;
-    left: 52%;
-    animation-duration: 5s;
-    animation-delay: 5s;
-}
-
-.burbuja:nth-child(9){
-    width: 65px;
-    height: 65px;
-    left: 51%;
-    animation-duration: 3s;
-    animation-delay: 2s;
-}
-
-.burbuja:nth-child(10){
-    width: 40px;
-    height: 40px;
-    left: 35%;
-    animation-duration: 3s;
-    animation-delay: 4s;
-}
-
-
-@keyframes burbujas{
-    0%{
-        bottom: 0;
-        opacity: 0;
-    }
-    30%{
-        transform: translateX(30px);
-    }
-    50%{
-        opacity: .4;
-    }
-    100%{
-        bottom: 100vh;
-        opacity: 0;
-    }
-}
-
 @keyframes movimiento{
     0%{
         transform: translateY(0);
@@ -230,51 +121,6 @@ body{
         transform: translateY(0);
     }
 }
-
-/*------------FIN NUEVO INDEX-----------*/
-
-/*-------------SLIDER-----------------
-
-.slider-frame {
-	width: 1110px;
-    height: auto;
-	margin:50px auto 0;
-	overflow: hidden;
-}
-
-.slider-frame ul {
-	display: flex;
-	padding: 0;
-	width: 400%;
-	
-	animation: slide 20s infinite alternate ease-in-out;
-}
-
-.slider-frame li {
-	width: 100%;
-	list-style: none;
-}
-
-.slider-frame img {
-	width: 100%;
-
-}
-
-@keyframes slide {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
-}
-
------------SLIDER-------------------*/
 
 
 
@@ -291,7 +137,10 @@ body{
     color: #fff;
     background-size: 300%;
     transition: 0.6s;
+
 }
+
+
 
 .btn:hover{
 background-position: right;
@@ -300,7 +149,7 @@ background-position: right;
 .btn-deep-orange {
     color: #fff;
     background-image: linear-gradient(to left, #FF5733, #881857, #FF5733);
-  
+    
 }
 
 .btn-deep-orange:hover {
@@ -312,6 +161,15 @@ background-position: right;
     
     color: #fff;
     background-image: linear-gradient(to left, #FF5733, #881857, #FF5733);
+}
+
+.btn_ofertas{
+    text-align: center;
+    width: 100px;
+    height: 21px;
+    background-color: rgb(247, 75, 75);
+    margin-left: 70px;
+    border-radius: 5px;
 }
 
 /*FIN BTN*/
@@ -376,6 +234,11 @@ transform: scale(1.07);
     transition: all 300ms;
     }
 
+.container_descuento{
+    text-align: center;
+    width: 100%;
+}
+
 
 
 .container__row{
@@ -404,6 +267,12 @@ transform: scale(1.07);
     padding: 50px;
 }
 
+.container__row h1{
+    color: wheat;
+    text-align: center;
+    margin-top: 10px;
+}
+
 
 footer{
     width: 100%;
@@ -429,6 +298,11 @@ footer{
     color: #7a7a7a;
 }
 
+
+.text_productos h1{
+    text-align: center;
+    color: #EFF3F5;
+}
 .box__footer{
     display: flex;
     flex-direction: column;
@@ -483,7 +357,7 @@ footer{
 
 .box__copyright p{
     margin-top: 20px;
-    color: #7a7a7a;
+    color: mintcream;
 }
 
 .box__copyright hr{
